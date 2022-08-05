@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/index.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Rubik:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <title>Weather Forecast</title>
+</head>
+
+<body class="backgroundify">
+
+    <div class="grid lg:grid-cols-3 grid-rows-auto">
+
+        <!-- partatio 1 -->
+
+        <div class="gridify-third col-span-2">
+            <!-- this the spot -->
+            <div class="row-span-2">
+                <h1 class="uppercase p-10 text-white text-bold text-2xl font-rubik drop-shadow-md ">Weather.io</h1>
+            </div>
+
+            <div class="weatherLoading text-white text-[1.2rem] p-10 rounded-xl">
+                <div class=" flex flex-row w-auto first-letter lg:justify-start justify-center">
+                    <div class="">
+                        <h4 class="feelslike ml-3 mt-0 "></h4>
+                        <h1 class="temp text-[60px] md:text-[100px] lg:text-[140px] "></h1>
+                        <h2 class="city text-[15px] md:text-[25px] lg:text-[45px] "></h2>
+                    </div>
+                    <div class="otherDetails w-auto flex flex-col items-center justify-center m-4">
+                        <img src=" " alt=" " class="icon lg:w-[100px] md:w-[60px] w-[30px] h-auto " />
+                        <div class="description text-[1.02rem] md:text-[1.5rem] lg:text-[2rem]"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- partation 2 -->
+        <div class="col-span-2 lg:col-span-1">
+            <div class=" flex items-center h-screen card glass  flex-col p-[3rem]">
+                <div class="mb-3 ">
+                    <div class=" search input-group relative flex py-3 items-stretch w-full mb-4 ">
+                        <input type="search " class=" searchBar form-control relative flex-auto min-w-0 block w-full pl-[3rem] pr-[3rem] py-[10px] font-rubik text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 bg-rd transition ease-in-out
+m-0 focus:text-gray-700 focus:bg-white focus:outline-none " placeholder="Another Locations " aria-label="Search " aria-describedby="button-addon2 ">
+                        <button class="btn bg-rd2 flex px-6 py-2.5 bg-white text-black font-medium text-xs leading-tight uppercase shadow-md hover:bg-blue-700 hover:shadow-lg hover:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800
+active:shadow-lg transition duration-150 ease-in-out items-center " type="button " id="button-addon2 ">
+          <svg aria-hidden="true " focusable="false " data-prefix="fas " data-icon="search " class="w-4 " role="img " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 512 512 ">
+            <path fill="currentColor " d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9
+0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z "></path>
+          </svg>
+        </button>
+                    </div>
+                    <div class="text-xl text-gray-100 ">
+                        <div class="flex flex-col ">
+                            <h1 class="mb-4 hover:text-black hover:bg-white flex justify-center p-2" id="bishoftu">Bishoftu, ET</h1>
+                            <h1 class="mb-4 hover:text-black hover:bg-white flex justify-center p-2" id='addisababa'>Addis Ababa, ET</h1>
+                            <h1 class="mb-4 hover:text-black hover:bg-white flex justify-center p-2" id="dubai ">Dubai, AE</h1>
+                            <h1 class="mb-4 hover:text-black hover:bg-white flex justify-center p-2" id="london ">London, UK</h1>
+                        </div>
+                        <div class="absolute h-px w-full bg-white left-0 "></div>
+
+                    </div>
+                    <div class="text-xl text-gray-100 mt-8 ">
+                        <div>
+                            <h1 class="font-bold mb-8 flex justify-start">Weather Details</h1>
+                        </div>
+                        <div class="grid grid-flow-col auto-cols-max  lg:gap-10 md:gap-5 gap-2 lg:text-lg md:text-[1.1rem] text-[.75rem] justify-center">
+                            <div class="flex flex-col lg:items-start justify-start">
+                                <div class="pb-4 ">
+                                    <h1 class="humidity">• Humidity - 43%</h1>
+                                </div>
+                                <div class="pb-4 ">
+                                    <h1 class="Windspeed">• Wind speed - 4 Km/hr </h1>
+                                </div>
+                                <div class="pb-4 ">
+                                    <h1 class="Pressure">• Pressure - 1000mb</h1>
+                                </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="pb-4 ">
+                                    <h1 class="HighTemprature">• High Temprature - 23°C</h1>
+                                </div>
+                                <div class="pb-4 ">
+                                    <h1 class="LowTemprature">• Low Temprature - 34°C</h1>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="flex justify-center">
+                        <div class=" text-white font-mono sticky text-sm"> Made by <a href="https://t.me/kaleabdereje" class="pl-2 underline hover:no-underline "> Kaleab D. </a></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
